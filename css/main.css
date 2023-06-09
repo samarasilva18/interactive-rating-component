@@ -1,0 +1,236 @@
+:root{
+    --color-orange: hsl(25, 97%, 53%);
+    --color-white: hsl(0, 0%, 100%);
+    --color-light-gray: hsl(217, 12%, 63%);
+    --color-gray: hsl(216, 12%, 54%);
+    --color-dark-gray: hsl(213, 19%, 18%);
+    --color-black: hsl(216, 12%, 8%);
+}
+
+body {
+    background-color: var(--color-black);
+    font-family: 'Overpass', sans-serif;
+    font-size: 0.9rem;
+    font-weight: 400;
+    color: var(--color-light-gray); 
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+}
+
+main .rating{
+    background: linear-gradient(hsla(213, 19%, 18%, 0.8), hsla(213, 19%, 18%, 0.3));
+    border-radius: 0.8rem;
+    max-width: 17.5rem;
+    display: flex;
+    flex-direction: column;
+    padding: 1.5rem;
+}
+
+.image-container {
+    background-color: var(--color-dark-gray);
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+}
+
+main .rating img {
+    width: 0.9rem;
+    height: 0.9rem;
+}
+
+.title {
+    color: var(--color-white);
+    margin-bottom: 0;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 1.3rem;
+    align-items: center;
+    justify-content: center;
+    margin-top: 0.5rem;
+}
+
+ul li {
+    background-color: var(--color-dark-gray);
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    text-align: center;
+    padding-top: 0.06rem;
+    font-weight: 700;
+    font-size: 1rem;
+}
+
+ul li:hover{
+    background-color: var(--color-gray);
+    color: var(--color-white);
+    cursor: pointer;
+}
+
+main button {
+    background: var(--color-orange);
+    color: var(--color-white);
+    font-weight: 700;
+    border: none;
+    display: inline-block;
+    border-radius: 2rem;
+    padding: 0.9rem;
+    width: 100%;
+    margin-top: 1.5rem;
+    margin-bottom: 0.5rem;
+    text-transform: uppercase;
+    letter-spacing: 0.2rem;
+}
+
+main button:hover{
+    background-color: var(--color-white);
+    color: var(--color-orange);
+    cursor: pointer;
+}
+
+.active-button {
+    background: var(--color-orange);
+    color: var(--color-white);
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    margin-bottom: 0.5rem;
+}
+
+main .thank-you {
+    background: linear-gradient(hsla(213, 19%, 18%, 0.8), hsla(213, 19%, 18%, 0.3));
+    border-radius: 0.8rem;
+    max-width: 17.5rem;
+    display: flex;
+    flex-direction: column;
+    padding: 1.5rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.thank-you img {
+    margin-top: 0.8rem;
+    max-height: 6rem;
+}
+
+.thank-you h2 {
+    color: var(--color-orange);
+    font-size: 0.9rem;
+    background-color: var(--color-dark-gray);
+    border-radius: 2rem;
+    padding: 0.3rem;
+    padding-right: 0.8rem;
+    padding-left: 0.8rem;
+    margin-top: 1.6rem;
+    font-weight: 400;
+}
+
+.thank-you h1{
+    color: var(--color-white);
+    margin-bottom: 0;
+}
+
+.thank-you p {
+    text-align: center;
+}
+
+.inactive {
+    display: none !important;
+}
+
+@media (min-width: 700px) {
+    
+    body{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        min-height: 100vh;
+        margin: 0;
+    }
+
+    main .rating {
+        max-width: 21.5rem;
+        border-radius: 7%;
+        padding-left: 2rem;
+        padding-right: 2rem;
+        padding-bottom: 2rem;
+    }
+
+    main button {
+        margin-top: 2rem;
+        margin-bottom: 0;
+    }
+
+    .image-container {
+        width: 3.2rem;
+        height: 3.2rem;
+        margin-top: 0.5rem;
+        margin-bottom: 0.5rem;
+    }
+
+    main .rating img {
+        width: 1rem;
+        height: 1rem;
+    }
+
+    .rating p {
+        line-height: 1.5rem;
+    }
+
+    ul li {
+        width: 3.2rem;
+        height: 3.2rem;
+    }
+ 
+    .thank-you img {
+        max-height: 10rem;
+    }
+
+    main .thank-you {
+        max-width: 25rem;
+        border-radius: 7%;
+        padding-left: 2.5rem;
+        padding-right: 2.5rem;
+        padding-bottom: 2rem;
+    }
+
+    .thank-you img {
+        margin-top: 1.5rem;
+        max-height: 10rem;
+    }
+
+    .thank-you h2 {
+        margin-top: 2rem;
+        font-size: 1rem;
+        padding-top: 0.5rem;
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+
+    .thank-you p {
+        line-height: 1.5rem;
+        max-width: 20.5rem;
+    }
+
+}
