@@ -25,11 +25,11 @@
       <h1 class="title">How did we do?</h1>
       <p>Please let us know how we did with your support request. All feedback is appreciated to help us improve our offering!</p>
       <ul>
-        <li class="list-button" value=1>1</li>
-        <li class="list-button" value=2>2</li>
-        <li class="list-button" value=3>3</li>
-        <li class="list-button" value=4>4</li>
-        <li class="list-button" value=5>5</li>
+        <li class="list-button">1</li>
+        <li class="list-button">2</li>
+        <li class="list-button">3</li>
+        <li class="list-button">4</li>
+        <li class="list-button">5</li>
       </ul>
       <button onclick="thankyou()">Submit</button>
     </div>
@@ -58,11 +58,11 @@
       if (prevBtn) {
         prevBtn.classList.remove('active-button');
         e.target.classList.add('active-button');
-        selectButton = e.target.value;
+        selectButton = e.target.innerHTML;
       }
       else {
         e.target.classList.add('active-button');
-        selectButton = e.target.value;
+        selectButton = e.target.innerHTML;
       }
       document.getElementById("selected").innerHTML = selectButton;
     });

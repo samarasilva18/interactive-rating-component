@@ -38,7 +38,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Solution](https://www.frontendmentor.io/)
+- Solution URL: [Solution](https://www.frontendmentor.io/solutions/responsive-solution-using-flexbox-and-css-variables-yxEalMgYTU)
 - Live Site URL: [Site](https://samarasilva18.github.io/interactive-rating-component/)
 
 ## My process
@@ -80,11 +80,11 @@ const liButton = document.querySelectorAll('.list-button');
       if (prevBtn) {
         prevBtn.classList.remove('active-button');
         e.target.classList.add('active-button');
-        selectButton = e.target.value;
+        selectButton = e.target.innerHTML;
       }
       else {
         e.target.classList.add('active-button');
-        selectButton = e.target.value;
+        selectButton = e.target.innerHTML;
       }
       document.getElementById("selected").innerHTML = selectButton;
     });
@@ -98,7 +98,7 @@ I was wary of this challenge because of the use of JS, but it wasn't too bad! I 
 ### Useful resources
 
 - [How to select multiple buttons?](https://stackoverflow.com/questions/73663568/how-to-select-multiple-buttons-and-keep-the-border-on-each-one-clicked) - This helped me figure out what kind of function I should make to make the score buttons toggable!
-- [Setting the value of a button clicked as a Javascript variable](https://stackoverflow.com/questions/33126215/set-value-of-button-clicked-as-a-javascript-variable-without-using-an-id-name) - And this helped me with getting the score from the button picked!
+- [Get the text of a li element](https://stackoverflow.com/questions/2460706/get-the-text-of-an-li-element) - And this helped me with getting the score from the button picked!
 
 ## Author
 
